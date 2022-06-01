@@ -300,7 +300,7 @@ FUNCTION mh_LoadHrb( cHrbFile_or_oHRB )
 
          IF ! hb_HHasKey( ts_hHrbs, cHrbFile_or_oHRB )
             //ts_hHrbs[ cHrbFile_or_oHRB ] := hb_hrbLoad( HB_HRB_BIND_OVERLOAD, cFile )
-            ts_hHrbs[ cHrbFile_or_oHRB ] := hb_hrbLoad( HB_HRB_BIND_DEFAULT, cFile )
+            hb_hrbLoad( HB_HRB_BIND_DEFAULT, cFile )
          ENDIF
       ELSE
 
