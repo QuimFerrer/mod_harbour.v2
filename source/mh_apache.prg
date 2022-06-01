@@ -299,8 +299,7 @@ FUNCTION mh_LoadHrb( cHrbFile_or_oHRB )
       IF File( cFile )
 
          IF ! hb_HHasKey( ts_hHrbs, cHrbFile_or_oHRB )
-            //ts_hHrbs[ cHrbFile_or_oHRB ] := hb_hrbLoad( HB_HRB_BIND_OVERLOAD, cFile )
-            hb_hrbLoad( HB_HRB_BIND_DEFAULT, cFile )
+            ts_hHrbs[ cHrbFile_or_oHRB ] := hb_hrbLoad( HB_HRB_BIND_OVERLOAD, cFile )
          ENDIF
       ELSE
 
